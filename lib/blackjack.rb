@@ -31,7 +31,6 @@ def initial_round
 end
 
 def hit?(num)
-  display_card_total(num)
   prompt_user
   input = get_user_input
   case input
