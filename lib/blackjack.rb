@@ -31,6 +31,7 @@ def initial_round
 end
 
 def hit?(num)
+  display_card_total(num)
   prompt_user
   input = get_user_input
   case input
@@ -38,9 +39,9 @@ def hit?(num)
       return num
     when "h"
       num += deal_card
-      if num <= 21
-        display_card_total(num)
-      end
+     # if num <= 21
+     #   display_card_total(num)
+     # end
     else
       invalid_command
       hit?(num)
