@@ -38,9 +38,6 @@ def hit?(num)
       return num
     when "h"
       num += deal_card
-     # if num <= 21
-     #   display_card_total(num)
-     # end
     else
       invalid_command
   end
