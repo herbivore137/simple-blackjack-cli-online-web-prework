@@ -40,7 +40,6 @@ def hit?(num)
       num += deal_card
     else
       invalid_command
-      prompt_user
       hit?(num)
   end
   num
