@@ -57,11 +57,13 @@ def runner
   welcome
   card_total = initial_round
   
-  case card_total
-    when < 21
+  if card_total < 21
       card_total = hit?(card_total)
       display_card_total(card_total)
-    when 
+    elsif
+      card_total == 21
+      puts "Congratulations! You've hit 21, BLACKJACK!"
+  end 
   
   until card_total > 21
     card_total = hit?(card_total)
