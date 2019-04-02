@@ -61,7 +61,9 @@ def runner
       display_card_total(card_total)
       hit?(card_total)
   end
-  card_total > 21 ? end_game(card_total) : puts "BLACKJACK!"
+ # card_total > 21 ? end_game(card_total) : puts "BLACKJACK!"
+ 
+ 
 end
     
 runner
