@@ -32,8 +32,8 @@ end
 
 def hit?(num)
   prompt_user
-  input = get_user_input
-  case input
+#  input = get_user_input
+  case get_user_input
     when "s"
       return num
     when "h"
