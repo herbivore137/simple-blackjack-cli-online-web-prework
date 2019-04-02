@@ -44,7 +44,6 @@ def hit?(num)
      # end
     else
       invalid_command
-      hit?(num)
   end
   num
 end
